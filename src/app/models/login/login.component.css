@@ -1,0 +1,61 @@
+#loginpage{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#joystick{
+  width: 550px;
+  transform: rotate(-30deg);
+}
+
+#right-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 400px;
+  /* background-color: red; */
+}
+
+#facebook{
+  width: 200px;
+  height: 40px;
+  background-color: #ff6347;
+  border-radius: 20px;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: beige;
+}
+
+#login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#username,#password{
+  text-align: center;
+  caret-color: #ff6347;
+  outline: none;
+  border:1px solid #ff6347;
+  font-size: .8rem;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+#login-btn{
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #ff6347;
+  border: none;
+  color: beige;
+}
+

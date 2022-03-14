@@ -10,6 +10,10 @@
   background-size: cover;
 }
 
+#title{
+  color: beige;
+}
+
 .button{
   position: relative;
   background-color: black;

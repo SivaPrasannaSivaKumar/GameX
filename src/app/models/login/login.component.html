@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div id="loginpage">
+  <div id="left-content">
+    <img id="joystick" src="../../../assets/Img/Joystick.svg" alt="Joystick">
+  </div>
+  <div id="right-content">
+    <a href="#" id="facebook"><i class="bi bi-facebook"></i>&nbsp;Sign in with Facebook</a>
+    <form action="#" id="login-form" class="mt-2">
+      <label for="username" id="user" class="mb-1">Username</label>
+      <input type="text" name="username" id="username" placeholder="Enter your name">
+      <label for="password" id="pwd" class="mt-1">Password</label>
+      <input type="text" name="password" id="password" class="mb-2" placeholder="Enter your password">
+      <button routerLink="/home"type="submit" id="login-btn">Login</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+#banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#heading{
+  font-size: bold;
+}
+
+#banner-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#aboutImg{
+  width: 650px;
+  height: 600px;
+}
+
+#content-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
