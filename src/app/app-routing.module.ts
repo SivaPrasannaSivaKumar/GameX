@@ -10,14 +10,14 @@ import { RegisterComponent } from './models/register/register.component';
 import { StartComponent } from './models/start/start.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent},
+  {path:'home',component:HomeComponent},
   {path:'games',component:GamesComponent},
   {path:'about',component:AboutComponent},
   {path:'ordergame',component:OrdergameComponent},
   {path:'contact',component:ContactComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
-  {path:'start',component:StartComponent}
+  {path:'',component:StartComponent}
 ];
 
 @NgModule({
