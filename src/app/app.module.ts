@@ -14,6 +14,7 @@ import { StartComponent } from './models/start/start.component';
 import { ContactComponent } from './models/contact/contact.component';
 import { OrdergameComponent } from './models/ordergame/ordergame.component';
 
+import { GamedetailService } from './service/gamedetail.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +31,11 @@ import { OrdergameComponent } from './models/ordergame/ordergame.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
-  providers: [],
+  providers: [
+    GamedetailService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
