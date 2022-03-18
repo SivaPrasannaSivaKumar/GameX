@@ -1,7 +1,16 @@
 #banner{
   width: 100%;
-  height: 600px;
-  background-image: url("../../../assets/Img/HomePage.png");
-  background-position: center;
-  background-size: cover;
+  min-height:100vh ;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+#cyberpunk,#halo,#assassin,#prop,#nfs{
+  width: 100%;
+  height: 600px;
+  object-fit: contain;
+}
+

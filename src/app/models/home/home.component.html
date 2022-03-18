@@ -1,6 +1,35 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <div id="banner">
-
+  <!-- Carousel  -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="6000">
+        <img id="cyberpunk" src="../../../assets/Img/Cyberpunk.jpg" class="d-block w-100" alt="Cyberpunk">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img id="halo" src="../../../assets/Img/Halo.jpg" class="d-block w-100" alt="Halo">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img id="assassin" src="../../../assets/Img/Assassin-Creed.jpg" class="d-block w-100" alt="Assassin-Creed">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img id="prop" src="../../../assets/Img/PropNight.jpg" class="d-block w-100" alt="PropNight">
+      </div>
+      <div class="carousel-item" data-bs-interval="6000">
+        <img id="nfs" src="../../../assets/Img/NeedForSpeed.avif" class="d-block w-100" alt="NeedForSpeed">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--  -->
 </div>
+
 <app-footer></app-footer>

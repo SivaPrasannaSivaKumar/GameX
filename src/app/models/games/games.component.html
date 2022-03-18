@@ -1,1 +1,42 @@
-<p>games works!</p>
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<div id="banner">
+  <div id="buttons">
+    <button id="all-game" (click)="showAllGames()">All</button>
+    <button id="top-game" (click)="showTopGame()">Top Games</button>
+    <button id="popular-game" (click) = "showPopularGame()">Popular Games</button>
+  </div>
+
+  <!-- All Games -->
+  <div id="all-games" class="row" *ngIf="showAll">
+    <div id="game-content" *ngFor="let li of games">
+          <img src="{{li.Image}}" alt="{{li.Name}}">
+    </div>
+  </div>
+  <!--  -->
+
+
+
+
+  <!-- Popular Games -->
+  <div id="top-games" class="row" *ngIf="showPopular">
+    <div id="game-content" *ngFor="let li of games">
+      <div  *ngIf="li.Famous === 'Popular Game'">
+          <img src="{{li.Image}}" alt="{{li.Name}}">
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+   <!-- Top Games -->
+   <div id="top-games" class="row" *ngIf="showTop">
+    <div id="game-content" *ngFor="let li of games">
+      <div  *ngIf="li.Famous === 'Top Game'">
+          <a routerLink="/games"><img src="{{li.Image}}" alt="{{li.Name}}"></a>
+          <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+</div>
+<app-footer></app-footer>
