@@ -12,12 +12,14 @@
             <div class="mb-3">
               <label for="email" class="form-label">Email address</label>
               <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <span class="text-danger" *ngIf="loginForm.controls['email'].dirty && loginForm.hasError('required','email')">*Email Id is required</span>
             </div>
             <div class="mb-3">
               <label for="pwd" class="form-label">Password</label>
               <input formControlName="password" type="password" class="form-control" id="pwd">
+              <span class="text-danger" *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')">*Password is required</span>
             </div>
-            <button type="submit" class="btn mb-3">Login</button>
+            <button type="submit" class="btn mb-3" [disabled]="!loginForm.valid">Login</button>
             <p class="text-center">New user?<a routerLink="/register">Register here</a>.</p>
           </form>
         </form>

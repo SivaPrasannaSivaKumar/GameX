@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormGroup,FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -16,8 +16,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      email:[''],
-      password:['']
+      email:['',Validators.required],
+      password:['',Validators.required]
     })
   }
 
@@ -28,7 +28,6 @@ export class LoginComponent implements OnInit {
         return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
       });
       if(user){
-        alert("Login successfull");
         this.loginForm.reset();
         this.router.navigate(['home'])
       } else{
