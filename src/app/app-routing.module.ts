@@ -10,14 +10,15 @@ import { RegisterComponent } from './models/register/register.component';
 import { StartComponent } from './models/start/start.component';
 
 const routes: Routes = [
+  {path:'',redirectTo:'login',pathMatch:'full'},
+  {path:'start',component:StartComponent},
   {path:'home',component:HomeComponent},
   {path:'games',component:GamesComponent},
   {path:'about',component:AboutComponent},
   {path:'ordergame',component:OrdergameComponent},
   {path:'contact',component:ContactComponent},
   {path:'login',component:LoginComponent},
-  {path:'register',component:RegisterComponent},
-  {path:'',component:StartComponent}
+  {path:'register',component:RegisterComponent}
 ];
 
 @NgModule({

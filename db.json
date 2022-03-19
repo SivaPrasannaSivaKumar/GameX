@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signUpUsers": [
+    {
+      "fullName": "Siva Prasanna",
+      "email": "sivaprasannas2001@gmail.com",
+      "password": "Prasann@08",
+      "mobile": "9626718828",
+      "id": 1
+    },
+    {
+      "fullName": "Sridhar",
+      "email": "abc@gmail.com",
+      "password": "abc@123",
+      "mobile": "1234567890",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

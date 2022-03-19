@@ -3,13 +3,23 @@
     <img id="joystick" src="../../../assets/Img/Joystick.svg" alt="Joystick">
   </div>
   <div id="right-content">
-    <a href="#" id="facebook"><i class="bi bi-facebook"></i>&nbsp;Sign in with Facebook</a>
-    <form action="#" id="login-form" class="mt-2">
-      <label for="username" id="user" class="mb-1">Username</label>
-      <input type="text" name="username" id="username" placeholder="Enter your name">
-      <label for="password" id="pwd" class="mt-1">Password</label>
-      <input type="text" name="password" id="password" class="mb-2" placeholder="Enter your password">
-      <button routerLink="/home"type="submit" id="login-btn">Login</button>
-    </form>
+      <div class="text-center">
+        <h1>Login</h1>
+        <h6 class="mb-3">Please enter email & password !!</h6>
+      </div>
+        <form>
+          <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="pwd" class="form-label">Password</label>
+              <input formControlName="password" type="password" class="form-control" id="pwd">
+            </div>
+            <button type="submit" class="btn mb-3">Login</button>
+            <p class="text-center">New user?<a routerLink="/register">Register here</a>.</p>
+          </form>
+        </form>
   </div>
 </div>
