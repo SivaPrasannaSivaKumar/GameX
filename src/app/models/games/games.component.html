@@ -22,7 +22,7 @@
   <div id="top-games" class="row" *ngIf="showPopular">
     <div id="game-content" *ngFor="let li of games">
       <div  *ngIf="li.Famous === 'Popular Game'">
-          <img src="{{li.Image}}" alt="{{li.Name}}">
+        <a routerLink="/{{li.Name}}"><img src="{{li.Image}}" alt="{{li.Name}}"></a>
       </div>
     </div>
   </div>
@@ -32,8 +32,7 @@
    <div id="top-games" class="row" *ngIf="showTop">
     <div id="game-content" *ngFor="let li of games">
       <div  *ngIf="li.Famous === 'Top Game'">
-          <a routerLink="/games"><img src="{{li.Image}}" alt="{{li.Name}}"></a>
-          <router-outlet></router-outlet>
+        <a routerLink="/{{li.Name}}"><img src="{{li.Image}}" alt="{{li.Name}}"></a>
       </div>
     </div>
   </div>
