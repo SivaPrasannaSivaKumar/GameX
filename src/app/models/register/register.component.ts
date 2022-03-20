@@ -9,7 +9,6 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
-
   public signUpForm !: FormGroup;
 
   constructor(private formBuilder:FormBuilder, private http:HttpClient, private router:Router) { }

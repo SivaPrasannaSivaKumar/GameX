@@ -1,6 +1,6 @@
 #banner{
   width: 100%;
-  min-height:100vh ;
+  min-height:280% ;
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
@@ -23,7 +23,8 @@
   background: transparent;
   border: 1px solid tomato;
   outline: none;
-  margin-top: 20px;
+  margin-top: -60px;
+  margin-bottom: -20px;
   transition: 1s ease-in-out;
   color: beige;
 }
@@ -42,7 +43,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #game-content{
@@ -52,16 +53,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 30px;
-  margin-bottom: 50px;
-  margin-left: 20px;
+  margin-bottom: -150px;
   color: beige;
 }
 
 img{
-  width: 400px;
-  height: 400px;
-  border-radius: 30px;
-  object-fit:fill;
+  width: 350px;
+  object-fit: contain;
 }
 

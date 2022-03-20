@@ -6,7 +6,15 @@
       "author": "typicode"
     }
   ],
-  "signUpUsers": [],
+  "signUpUsers": [
+    {
+      "fullName": "Siva Prasanna",
+      "email": "sivaprasanna.s@heptagon.in",
+      "password": "Prasann@08",
+      "mobile": "9626718828",
+      "id": 1
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
