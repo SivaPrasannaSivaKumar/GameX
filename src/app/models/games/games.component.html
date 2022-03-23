@@ -3,8 +3,8 @@
 <div id="banner">
   <div id="buttons">
     <button id="all-game" (click)="showAllGames()">All</button>
-    <button id="top-game" (click)="showTopGame()">Top Games</button>
-    <button id="popular-game" (click) = "showPopularGame()">Popular Games</button>
+    <!-- <button id="top-game" (click)="showTopGame()">Top Games</button>
+    <button id="popular-game" (click) = "showPopularGame()">Popular Games</button> -->
   </div>
 
   <!-- All Games -->
@@ -16,19 +16,13 @@
   <!--  -->
 
 
-
-
-  <!-- Popular Games -->
-  <div id="top-games" class="row" *ngIf="showPopular">
+  <!-- <div id="top-games" class="row" *ngIf="showPopular">
     <div id="game-content" *ngFor="let li of games">
       <div  *ngIf="li.Famous === 'Popular Game'">
         <a routerLink="/{{li.Name}}"><img src="{{li.Image}}" alt="{{li.Name}}"></a>
       </div>
     </div>
   </div>
-  <!--  -->
-
-   <!-- Top Games -->
    <div id="top-games" class="row" *ngIf="showTop">
     <div id="game-content" *ngFor="let li of games">
       <div  *ngIf="li.Famous === 'Top Game'">
@@ -36,6 +30,7 @@
       </div>
     </div>
   </div>
-  <!--  -->
+   -->
+
 </div>
 <app-footer></app-footer>
