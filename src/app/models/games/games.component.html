@@ -10,7 +10,7 @@
   <!-- All Games -->
   <div id="all-games" class="row" *ngIf="showAll">
     <div id="game-content" *ngFor="let li of games">
-          <a routerLink="/{{li.Name}}"><img src="{{li.Image}}" alt="{{li.Name}}"></a>
+          <a routerLink="/{{li.Name}}"><img src="{{li.Image}}" alt="{{li.Name}}"><h5 class="mt-3">{{li.Name}}</h5></a>
     </div>
   </div>
   <!--  -->

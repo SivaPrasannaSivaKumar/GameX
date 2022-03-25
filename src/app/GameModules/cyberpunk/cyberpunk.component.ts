@@ -11,5 +11,4 @@ export class CyberpunkComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

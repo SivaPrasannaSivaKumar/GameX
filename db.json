@@ -13,6 +13,13 @@
       "password": "Prasann@08",
       "mobile": "9626718828",
       "id": 1
+    },
+    {
+      "fullName": "Siva Prasanna",
+      "email": "sivaprasanna.s@heptagon.in",
+      "password": "1234",
+      "mobile": "1234567890",
+      "id": 2
     }
   ],
   "profile": {

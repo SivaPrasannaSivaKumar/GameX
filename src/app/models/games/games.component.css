@@ -62,3 +62,8 @@ img{
   object-fit: contain;
 }
 
+a > h5{
+  text-align: center;
+  color: beige;
+  text-transform: uppercase;
+}
